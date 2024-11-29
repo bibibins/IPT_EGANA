@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculations</title>
+    <script>
+        function calculate() {
+           
+            let num = parseFloat(document.getElementById('num').value);
+            if (isNaN(num)) {
+                alert("Please enter a valid number.");
+                return;
+            }
+
+            let square = num * num;
+            let cube = num * num * num;
+            document.getElementById('square').textContent = `Square: ${square}`;
+            document.getElementById('cube').textContent = `Cube: ${cube}`;
+
+            
+            let sum = 0;
+            for (let i = 1; i <= 5; i++) {
+                let n = parseFloat(document.getElementById('num' + i).value);
+                if (isNaN(n)) {
+                    alert("Please enter a valid number for all inputs.");
+                    return;
+                }
+                sum += n;
+            }
+
+            let average = sum / 5;
+            document.getElementById('average').textContent = `Average: ${average}`;
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Number Calculations</h1>
+
+    <label for="num">Enter a number for Square and Cube:</label>
+    <input type="number" id="num" placeholder="Enter number" required>
+    <button onclick="calculate()">Calculate Square & Cube</button>
+
+    <p id="square"></p>
+    <p id="cube"></p>
+
+    <h3>Enter five numbers to calculate the average:</h3>
+    <form>
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" required><br>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" required><br>
+        <label for="num3">Number 3:</label>
+        <input type="number" id="num3" required><br>
+        <label for="num4">Number 4:</label>
+        <input type="number" id="num4" required><br>
+        <label for="num5">Number 5:</label>
+        <input type="number" id="num5" required><br>
+    </form>
+
+    <button onclick="calculate()">Calculate Average</button>
+
+    <p id="average"></p>
+
+</body>
+</html>

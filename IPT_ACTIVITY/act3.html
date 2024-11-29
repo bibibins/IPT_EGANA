@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Form</title>
+</head>
+<body>
+
+    <h1>Biodata Form</h1>
+
+    <form action="#" method="post">
+        <h2>Personal Information</h2>
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" required></textarea><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <h2>Education</h2>
+        <label for="degree">Degree:</label><br>
+        <input type="text" id="degree" name="degree" required><br><br>
+
+        <label for="institution">Institution:</label><br>
+        <input type="text" id="institution" name="institution" required><br><br>
+
+        <label for="gradYear">Year of Graduation:</label><br>
+        <input type="number" id="gradYear" name="gradYear" required><br><br>
+
+        <h2>Work Experience</h2>
+        <label for="jobTitle">Job Title:</label><br>
+        <input type="text" id="jobTitle" name="jobTitle" required><br><br>
+
+        <label for="company">Company:</label><br>
+        <input type="text" id="company" name="company" required><br><br>
+
+        <label for="experienceYears">Years of Experience:</label><br>
+        <input type="number" id="experienceYears" name="experienceYears" required><br><br>
+
+        <h2>Skills</h2>
+        <label for="skills">List your skills:</label><br>
+        <textarea id="skills" name="skills" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
